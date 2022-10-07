@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/752caced55.js" crossorigin="anonymous"></script>
+    <title>Begrepp och Github</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="nav-container">
+            <nav>
+                <ul id="nav-tag">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="references.html">References</a></li>
+                    
+                    <li class="linkcolors">
+                        <a href="#github">Github</a>
+                        <a href="#flexbox">Flexbox</a>
+                        <a href="#dom">DOM</a>
+                        <a href="#finkod">FIN Kod</a>
+                        <a href="#ramverk">Ramverk</a>
+                           
+                    </li>
+                    <i class="fa-solid fa-xmark fa-2x" onclick="menuClose()"></i>
+                </ul>
+                    
+                    <i class="fa-solid fa-bars fa-2x" onclick="menuOpen()"></i>
+
+            </nav>
+        </div>
+        
+            <div class="contents">
+                <h1>Begrepp och Github</h1>
+                <div class="cont" id="github">
+                    <h2>Github flow</h2>
+                    <p>GitHub-flow är utformat för att fördela arbetsbelastningen. Det är ett arbetsflöde som kan göras genom CLI (kommandorad)
+                    och GUI-applikationer (GitHub Desktop). Med hjälp av GitHub flow är det lättare att arbeta på distans och det fokuserar
+                    främst på att skapa branches. Varje individ kan skapa en branch, arbeta med den och distribuera den individuellt på
+                    GitHub.</p>
+                    <h3>Följande är Github-flödesfunktioner</h3>
+                    <ul>
+                        <li><strong>Skapa en ny filial</strong></li>
+                        <li><strong>Gör ändringar och lägg till Commits</strong></li>
+                        <li><strong>Öppna en Pull Request</strong></li>
+                        <li><strong>Review</strong></li>
+                        <li><strong>Distribuera</strong></li>
+                        <li><strong>Merge</strong></li>
+
+                    </ul>
+                    <br>
+                    <div>
+                        <h3>Skapa en ny filial</h3>
+                        <p>Att skapa en branch och arbeta med den är huvudkonceptet för Github. Det ger oss en miljö för att göra förändringar utan
+                        att påverka huvud branch.
+                        När den nya branch är klar kan den granskas, diskuteras och slås samman med huvud branch.
+                        Gör ändringar och lägg till Commits.
+                        När du arbetar med ett projekt kan mängden utfört arbete läggas till den skapade branch. Den håller koll på arbetet.
+                        Varje commit måste ha ett meddelande som förklarar ändringarna som gjorts i grenen. Den kan återställas vid behov.</p>
+                    </div>
+                    <div>
+                        <h3>Gör ändringar och lägg till Commits</h3>
+                        <p>När du arbetar med ett projekt kan mängden utfört arbete läggas till den skapade branch. Den håller koll på arbetet.
+                            Varje commit måste ha ett meddelande som förklarar ändringarna som gjorts i grenen. Den kan återställas vid behov.</p>
+                    </div>
+
+                    <div>
+                        <h3>Öppna en Pull Request</h3>
+                        <p>En pull-request meddelar andra gruppmedlemmar om ändringarna som gjorts för att granska. Den är utformad så att alla
+                            gruppmedlemmar kan arbeta tillsammans.</p>
+                    </div>
+
+                    <div>
+                        <h3>Review</h3>
+                        <p>När en återkoppling tas emot krävs att de ändringar som gjorts drivs med nya kommentarer.</p>
+                    </div>
+
+                    <div>
+                        <h3>Distribuera</h3>
+                        <p>Utplaceringen görs efter den sista granskningen av pull-request. När den slutliga testningen är gjord distribueras den
+                        sedan till masterbranch.</p>
+                    </div>
+
+                    <div>
+                        <h3>Merge</h3>
+                        <p>Efter testning kan den muras till mastergrenarna</p>
+                    </div>
+                    
+                    <p>Nedan finns alla kommandot som används i gitflow.</p>
+                    <div class="codes">
+                        <pre><code></code>
+                             <p class="codeParag">
+                                git clone https://github.com/VarnamoCampusWU22/github-flow-tutorial-asdf.git
+                                git checkout -b uppgift
+                                cd github-flow-tutorial/
+                                git checkout -b uppgift1
+                                git add git_experience.txt
+                                git commit -m "Firt commit"
+                                git push -u origin uppgift1
+                                
+                             </p>
+                        </code></pre>
+                    </div>
+                    <br><br><br>
+                </div>
+                <br><br><br>
+
+                <div class="cont" id="flexbox">
+                    <h2>Flexbox</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo aperiam non tempora sequi. Natus quae
+                        quia vel sunt voluptatibus. Facilis deleniti amet iste molestias ea. Asperiores sapiente magni
+                        impedit possimus.</p>
+                
+                    <div class="codes">
+                            <div>
+                                <img src="flexbox.png" alt="flexbox" class="flexBox"><p><em>Flexbox</em></p>
+                            </div>
+                        <p>Flexbox är en endimensionell layoutmodell. Den fördelar objekten i rader och kolumner. Den har många egenskaper såsom
+                        flex-direction som kan vara rad eller kolumner, align-items, display, flex-direction, flex-wrap, justify-content och
+                        align-content. Det gör webbplatsen responsiv och tar bort blanksteg. Nedan finns en exampel på hur kan man använda
+                        Flexbox.</p>
+                    </div>
+                    <div class="codes">
+                        <pre><code></code>
+                        <p class="codeParag">
+                        .flex-container {
+                            display: flex;
+                            flex-flow: row wrap;
+                        }
+                        </p>
+                        </code></pre>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="cont" id="dom">
+                    <h2>DOM (Document Object Model)</h2>
+                    <p>Dokumentobjektmodellen är trädstrukturen för en webbsida. När en sida laddas är HTML DOM-modellen konstruerad som ett
+                    träd av objekt. Den innehåller alla element och attribut för HTML-sidan. Med javascript är det lättare att ge
+                    funktionalitet till en webbplats. Det kan också ändra stilen på CSS.
+                    <div><img src="dom.gif" alt="DOM"><br><br></div>
+                    Javascript är ett objektorienterat skriptspråk. Den kan utföra en enorm mängd funktioner. Med DOM är det lättare att
+                    manipulera sammanhanget för HTML och CSS (webbplats). De mest kända metoderna för DOM som används är EventListner(),
+                    getElementById(), getElementByClassName, getAttribute(), setAttribute() .etc.</p>
+                
+                    <div class="codes">
+                        <pre><code></code>
+                            <p class="codeParag">
+                            element.addEventListener("click", myFunction);
+                            
+                            function myFunction() {
+                            alert ("Hello World!");
+                            }
+                            </p>
+                    </code></pre>
+                    </div>
+                    <br><br><br>
+                </div>
+
+                <div class="cont" id="finkod">
+                    <h2>Fin Kod</h2>
+                    <p>En bra kod i datorspråk är en uppsättning variabler, funktioner, loops, arrayer, listor och klasser arrangerade
+                    tillsammans på ett sätt som är lätt att läsa av andra programmerare. En bra torsk följer standarduppsättningen av regler
+                    som görs av programmerare att följa under programmering. </p>
+
+                    <ul>
+                        <li>Läsbar</li>
+                        <li>Kan läsas av människor</li>
+                        <li>Självförklarande</li>
+                        <li>Folk kan läsa den</li>
+                        <li>Lätt att förstå</li>
+                        <li>Det tar mindre tid att förstå det</li>
+                        <li>Du kan läsa den, förstå den utan dokumentation</li>
+                        <li>Förståeligt, nya utvecklare borde kunna förstå det</li>
+                        <li>Lättläst som om det vore någon text</li>
+                        <li>Rakt fram</li>
+                      
+                    </ul>
+                </div>
+
+                <div class="cont" id="ramverk">
+                    <h2>Ramverk</h2>
+                    <p>Ett ramverk är en struktur som programvaran är byggd på. Ett ramverk gör det enkelt för programmerare att koda utan att
+                    bygga upp hela strukturen i programvaran från grunden. Det finns olika ramverk på datorspråk. Till exempel är Node,
+                    Angular och Ajax kända ramverk i javascript. Django, Flask och Bottle är ramverk som används i python för
+                    webbutveckling.
+                    Ramar används mest för att spara tid, undvika dubbletter av koder och skriva ren kod. Fördelar av </p>
+                    <ul>
+          
+                        <li>Säkrare kod</li>
+                        <li>Enklare testning och felsökning</li>
+                        <li>Undviker duplicerad kod</li>
+                        <li>Ren och lätt anpassningsbar kod</li>
+                        <li>Kunna fokusera på att skriva kod specifik för projektet</li>
+                        <li>Kan förlängas</li>
+                    <li></li>
+                    </ul>
+                </div>
+                <br><br><br>
+            </div>
+     
+        
+    </div>
+    <footer><p>Copyright &copy Waqar Jelali</p></footer>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

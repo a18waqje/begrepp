@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: rgb(233, 233, 233);
+}
+#container{
+    margin: 0;
+    
+    
+}
+.nav-container nav{
+background-color: rgb(34, 39, 73);
+display: flex;
+flex-wrap: wrap;
+align-content: flex-end;
+flex-direction:row;
+justify-content: flex-end;
+    
+}
+.nav-container ul li{
+    display: inline-block;
+    
+    
+}
+.nav-container a {
+    
+    align-items: center;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 12px 0 20px;
+    margin-right:30px;
+    font-size: 15px;
+    position: relative;
+    background-color: rgb(34, 39, 73);
+    color: aliceblue;
+    border-radius: 5px;
+    font-weight: bold;
+
+
+}
+.nav-container a:hover {
+    color: rgb(113, 238, 207);
+    
+   
+}
+.contents {
+    margin: 20px;
+}
+.cont h2{
+    margin-top: 5vh;
+}
+.contents cont{
+    position: absolute;
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* ------------------------------------------------------------- */
+
+button {
+    position: relative;  
+    font-size: 0.8rem;
+    padding: 8px;
+    background-color: #020a3a;
+    color: rgb(113, 238, 207);
+    border-radius: 5px;
+   float: right;
+   display: inline;
+   top: -35px;
+   right:5px;
+   
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #22ffff;
+    color: #020a3a;
+}
+
+
+.codeParag{
+    background-color: hsl(240, 100%, 100%);
+    border-radius: 5px;
+    color: #000;
+    padding: 10px;
+    width:95%;
+    float: left;
+    margin: 0;
+}
+.codes{
+  margin: 30px 0;
+}
+.flexBox{
+    width: 500px;
+    padding: 20px;
+}
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color:rgb(34, 39, 73);
+    color: white;
+    height: 3vh;
+    margin-top: 2px;
+    padding-top: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 8px;
+    
+}
+.linkcolors {
+    
+    padding-left: 25px;
+    font-size: 16px;
+    border-left: 1px solid white;
+}
+.linkcolors a {
+    
+    
+    padding-right: 25px;
+  
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+@media only screen and (max-width: 1018px) {
+    nav .fa-solid {
+        display: block;
+    }
+    
+
+    nav ul {
+        position: fixed;
+        top: 0;
+        right: -380px;
+        background-color: #002e49;
+        z-index: 1;
+        width: 350px;
+        height: 100vh;
+        padding-top: 30px;
+        transition: right 0.5s;
+        margin: 0;
+        
+
+    }
+
+    nav{
+        color: #eaecee;
+        padding: 10px;
+       
+
+    }
+    .nav-container{
+        width: 100%;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 20px 10px 20px 10px;
+        border-bottom: 1px solid rgb(113, 238, 207);
+        width: 50%;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        cursor: pointer;
+        top: 8px;
+        left: 14px;
+        color: aliceblue;
+    }
+
+    .header-text h1{
+        margin: 30%;
+        font-size: 16px;
+    }
+    footer p{
+        position: fixed;
+        bottom: 0;
+        text-align: center;
+        font-size: 12px;
+        margin-left: 20%;
+    }
+
+   
+}
